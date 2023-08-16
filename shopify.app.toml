@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Percel Drop Guidance "
+client_id = "033b3bdf4f05b343e6413b10fc278c90"
+application_url = "https://exposure-say-occurrence-organize.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://exposure-say-occurrence-organize.trycloudflare.com/auth/callback",
+  "https://exposure-say-occurrence-organize.trycloudflare.com/auth/shopify/callback",
+  "https://exposure-say-occurrence-organize.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "direct-deli-store.myshopify.com"
